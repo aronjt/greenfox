@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous"/>
+    <link rel="shortcut icon" type="image/x-icon"
+          href="data:image/png;base64,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"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" data-th-fragment="menubar">
+    <div class="container px-2">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <div class="nav-item navbar-right">
+                    <form class="form-inline" data-sec-authorize="isAuthenticated()" id="frmlogout"
+                          data-th-action="@{/logout}" method="post">
+                        <a class="mx-3" href="javascript:{}" onclick="document.getElementById('frmlogout').submit(); return false;">Logout</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container p-2">
+    <p class="h2 py-2">Customers</p>
+    <table class="table table-dark">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Items</th>
+            <th scope="col">Add item</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-th-each="customer : ${customers}">
+            <td data-th-text="${customer.id}"></td>
+            <td data-th-text="${customer.name}"></td>
+            <td data-th-text="${customer.items.toString}"></td>
+            <td>
+                <form method="get" data-th-action="@{/deleteCustomer}">
+                    <button type="submit" data-th-name="id" data-th-value="${customer.id}">Delete</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container p-2">
+    <p class="h2 py-2">Items</p>
+    <table class="table table-dark">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Item name</th>
+            <th scope="col">Comment</th>
+            <th scope="col">Price</th>
+            <th scope="col">Status</th>
+            <th scope="col">Update status</th>
+            <th scope="col">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-th-each="item : ${items}">
+            <td data-th-text="${item.id}"></td>
+            <td data-th-text="${item.name}"></td>
+            <td data-th-text="${item.comment}"></td>
+            <td data-th-text="${item.price}"></td>
+            <td data-th-text="${item.status}"></td>
+            <td>
+                <form method="get" data-th-action="@{/updateItemStatus}">
+                    <select data-th-name="status">
+                        <option data-th-value="OPEN" data-th-text="OPEN"></option>
+                        <option data-th-value="IN_PROGRESS" data-th-text="IN_PROGRESS"></option>
+                        <option data-th-value="CLOSED" data-th-text="CLOSED"></option>
+                    </select>
+                    <button type="submit" data-th-name="id" data-th-value="${item.id}">Update</button>
+                </form>
+            </td>
+            <td>
+                <form method="get" data-th-action="@{/deleteItem}">
+                    <button type="submit" data-th-name="id" data-th-value="${item.id}">Delete</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container px-5 py-2">
+    <p class="h2 py-2">Create new customer</p>
+    <form data-th-action="@{/addCustomer}" data-th-object="${customer}" method="post">
+        <input type="text" placeholder="Name" data-th-field="*{name}">
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</div>
+
+<div class="container px-5 py-2">
+    <p class="h2 py-2">Create new item</p>
+    <form data-th-action="@{/addItem}" data-th-object="${item}" method="post">
+        <input type="text" placeholder="Name" data-th-field="*{name}">
+        <input type="text" placeholder="Comment" data-th-field="*{comment}">
+        <input type="number" placeholder="Price" data-th-field="*{price}">
+        <select data-th-field="*{status}">
+            <option data-th-value="OPEN" data-th-text="OPEN"></option>
+            <option data-th-value="IN_PROGRESS" data-th-text="IN_PROGRESS"></option>
+            <option data-th-value="CLOSED" data-th-text="CLOSED"></option>
+        </select>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</div>
+
+<div class="container px-5 py-2">
+    <p class="h2 py-2">Move item between customers</p>
+    <form data-th-action="@{/updateCustomerItem}" method="get">
+        <input type="number" placeholder="Item id" data-th-name="itemId" data-th-value="*{itemId}">
+        <input type="number" placeholder="From customer id" data-th-name="fromCustomerId" data-th-value="*{fromCustomerId}">
+        <input type="number" placeholder="To customer id" data-th-name="toCustomerId" data-th-value="*{toCustomerId}">
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
