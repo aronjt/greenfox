@@ -16,8 +16,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class CustomLoginSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
 
-    @Autowired
     private UserService userService;
+
+    @Autowired
+    public CustomLoginSuccessHandler(UserService userService) {
+        this.userService = userService;
+    }
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,

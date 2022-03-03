@@ -17,8 +17,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class CustomLoginFailureHandler extends SimpleUrlAuthenticationFailureHandler {
 
-    @Autowired
     private UserService userService;
+
+    @Autowired
+    public CustomLoginFailureHandler(UserService userService) {
+        this.userService = userService;
+    }
 
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response,
