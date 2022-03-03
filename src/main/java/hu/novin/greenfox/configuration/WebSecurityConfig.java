@@ -17,11 +17,15 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Autowired
     private CustomLoginFailureHandler loginFailureHandler;
 
-    @Autowired
     private CustomLoginSuccessHandler loginSuccessHandler;
+
+    @Autowired
+    public WebSecurityConfig(CustomLoginFailureHandler loginFailureHandler, CustomLoginSuccessHandler loginSuccessHandler) {
+        this.loginFailureHandler = loginFailureHandler;
+        this.loginSuccessHandler = loginSuccessHandler;
+    }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
